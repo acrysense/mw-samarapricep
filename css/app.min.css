@@ -2863,6 +2863,7 @@ svg {
   border-radius: 50%;
   -webkit-transition: border 0.25s ease-in-out;
   transition: border 0.25s ease-in-out;
+  pointer-events: none;
 }
 .recommends__slider .swiper-button-next:focus {
   outline: none;
