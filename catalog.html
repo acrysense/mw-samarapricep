@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAMARAPRICEP - Каталог</title>
+	<meta property="og:title" content="SAMARAPRICEP - Каталог">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SAMARAPRICEP - Каталог">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<html>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="58" height="26" alt="SAMARAPRICEP">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="catalog.html" class="nav__link nav__link--accent" id="dropdown-catalog-toggle">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-catalog"></use>
+									</svg>
+									<span>Каталог</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">Компания</a>
+							</li>
+							<li class="nav__item">
+								<a href="partners.html" class="nav__link">Партнёры</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Блог</a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="header__link" id="hamburger-toggle">Меню</a>
+					<div class="header__inner">
+						<button class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-basket"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- catalog -->
+			<section class="catalog" id="catalog">
+				<div class="container">
+					<div class="catalog__top">
+						<h1 class="catalog__heading">Прицепы</h1>
+						<div class="catalog-categories catalog__categories">
+							<div class="catalog-categories__wrapper">
+								<a href="#" class="catalog-categories__item">
+									<span class="catalog-categories__title">
+										Прицепы <br>
+										для дачи
+									</span>
+									<picture class="catalog-categories__img">
+										<img src="img/dropdown-catalog-categories-01.png" alt="Image">
+									</picture>
+								</a>
+								<a href="#" class="catalog-categories__item">
+									<span class="catalog-categories__title">
+										Прицепы <br>
+										для&nbsp;самоходной<br>
+										техники
+									</span>
+									<picture class="catalog-categories__img">
+										<img src="img/dropdown-catalog-categories-02.png" alt="Image">
+									</picture>
+								</a>
+								<a href="#" class="catalog-categories__item">
+									<span class="catalog-categories__title">Двухосные</span>
+									<picture class="catalog-categories__img">
+										<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+									</picture>
+								</a>
+								<a href="#" class="catalog-categories__item">
+									<span class="catalog-categories__title">
+										Прицепы <br>
+										для&nbsp;водной <br>
+										техники
+									</span>
+									<picture class="catalog-categories__img">
+										<img src="img/dropdown-catalog-categories-03.png" alt="Image">
+									</picture>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-filter catalog__filter">
+						<div class="filter-search catalog-filter__search">
+							<div class="filter-search__wrapper">
+								<div class="filter-search__inner">
+									<svg class="filter-search__icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+									<input type="text" class="filter-search__input" placeholder="Поиск по моделям…">
+								</div>
+								<button class="filter-search__btn filter-search__btn--desktop btn-default">Найти</button>
+								<button class="filter-search__btn filter-search__btn--mobile btn-default btn-default--mobile-icon btn-default--blue" id="catalog-filter-toggle">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-filter"></use>
+									</svg>
+									<span>Все фильтры</span>
+								</button>
+							</div>
+						</div>
+						<div class="catalog-filter__dropdown" id="catalog-filter">
+							<div class="catalog-filter__wrap">
+								<div class="catalog-filter__main">
+									<div class="catalog-filter__top">
+										<button class="catalog-filter__close">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="catalog-filter-detailed catalog-filter__detailed">
+										<div class="catalog-filter-detailed__wrapper">
+											<div class="catalog-filter-detailed__item">
+												<span class="catalog-filter-detailed__label">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-rub"></use>
+													</svg>
+													<span>Цена</span>
+												</span>
+												<div class="catalog-filter-detailed__body">
+													<div class="catalog-filter-detailed__inputs">
+														<input type="text" class="catalog-filter-detailed__input" placeholder="От">
+														<input type="text" class="catalog-filter-detailed__input" placeholder="До">
+													</div>
+													<div class="catalog-filter-detailed__values">
+														<button class="catalog-filter-detailed__value" data-value-from="50" data-value-to="60">50-60 т.</button>
+														<button class="catalog-filter-detailed__value" data-value-from="60" data-value-to="70">60-70 т.</button>
+														<button class="catalog-filter-detailed__value" data-value-from="70" data-value-to="80">70-80 т.</button>
+														<button class="catalog-filter-detailed__value" data-value-from="80" data-value-to="100">80-100 т.</button>
+														<button class="catalog-filter-detailed__value" data-value-from="100">от 100 т.</button>
+													</div>
+												</div>
+											</div>
+											<div class="catalog-filter-detailed__item">
+												<span class="catalog-filter-detailed__label">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-length-in"></use>
+													</svg>
+													<span>По длине <br>внутренней</span>
+												</span>
+												<div class="catalog-filter-detailed__body">
+													<div class="catalog-filter-detailed__inputs">
+														<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
+														<input type="number" class="catalog-filter-detailed__input" placeholder="6.2м">
+													</div>
+													<div class="catalog-filter-detailed__values">
+														<button class="catalog-filter-detailed__value" data-value-from="2.1" data-value-to="2.6">2,1 - 2,6м</button>
+														<button class="catalog-filter-detailed__value" data-value-from="2.6" data-value-to="3.5">2,6 - 3,5м</button>
+														<button class="catalog-filter-detailed__value" data-value-from="3.5">от 3,5м</button>
+													</div>
+												</div>
+											</div>
+											<div class="catalog-filter-detailed__item">
+												<span class="catalog-filter-detailed__label">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-width-in"></use>
+													</svg>
+													<span>По ширине <br>внутренней</span>
+												</span>
+												<div class="catalog-filter-detailed__body">
+													<div class="catalog-filter-detailed__inputs">
+														<input type="number" class="catalog-filter-detailed__input" placeholder="1.1м">
+														<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
+													</div>
+													<div class="catalog-filter-detailed__values">
+														<button class="catalog-filter-detailed__value" data-value-from="1.1" data-value-to="1.4">1,1 - 1,4м</button>
+														<button class="catalog-filter-detailed__value" data-value-from="1.4" data-value-to="1.7">1,4 - 1,7м</button>
+														<button class="catalog-filter-detailed__value" data-value-from="1.7">от 1,7м</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="catalog-filter__apply">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+									</svg>
+									<span>Применить</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__topping">
+						<div class="catalog__group">
+							<div class="select-box catalog__select">
+								<div class="select-box__container">
+									<div class="select-box__section">
+										<div class="select-box__wrap">
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-number-axles-01" name="sort-number-axles">
+												<label for="sort-number-axles-01" class="select-box__label">
+													<span class="select-box__title">1</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-number-axles-02" name="sort-number-axles">
+												<label for="sort-number-axles-02" class="select-box__label">
+													<span class="select-box__title">2</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select-box__selected">
+									<span class="select-box__placeholder is--active">Количество осей</span>
+									<span class="select-box__values"></span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select-box catalog__select">
+								<div class="select-box__container">
+									<div class="select-box__scroll" data-simplebar>
+										<div class="select-box__wrap">
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-coating-01" name="sort-coating">
+												<label for="sort-coating-01" class="select-box__label">
+													<span class="select-box__title">Оцинкованный</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-coating-02" name="sort-coating">
+												<label for="sort-у-02" class="select-box__label">
+													<span class="select-box__title">Крашенный</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select-box__selected">
+									<span class="select-box__placeholder is--active">Покрытие</span>
+									<span class="select-box__values"></span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select-box catalog__select">
+								<div class="select-box__container">
+									<div class="select-box__scroll" data-simplebar>
+										<div class="select-box__wrap">
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-01" name="sort-suspension-type">
+												<label for="sort-suspension-type-01" class="select-box__label">
+													<span class="select-box__title">3-х листовая рессора</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-02" name="sort-suspension-type">
+												<label for="sort-suspension-type-02" class="select-box__label">
+													<span class="select-box__title">4-х листовая рессора</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-03" name="sort-suspension-type">
+												<label for="sort-suspension-type-03" class="select-box__label">
+													<span class="select-box__title">5-и листовая рессора</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-04" name="sort-suspension-type">
+												<label for="sort-suspension-type-04" class="select-box__label">
+													<span class="select-box__title">6-и листовая рессора</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-05" name="sort-suspension-type">
+												<label for="sort-suspension-type-05" class="select-box__label">
+													<span class="select-box__title">ТР рессора</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select-box__selected">
+									<span class="select-box__placeholder is--active">Тип подвески</span>
+									<span class="select-box__values"></span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__group">
+							<div class="select-box select-box--single select-box--icon catalog__select">
+								<div class="select-box__container">
+									<div class="select-box__scroll" data-simplebar>
+										<div class="select-box__wrap">
+											<div class="select-box__option">
+												<input type="radio" class="select-box__radio" id="sort-type-01" name="sort-type" checked>
+												<label for="sort-type-01" class="select-box__label">
+													<span class="select-box__title">По популярности</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="radio" class="select-box__radio" id="sort-type-02" name="sort-type">
+												<label for="sort-type-02" class="select-box__label">
+													<span class="select-box__title">По дате</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="radio" class="select-box__radio" id="sort-type-03" name="sort-type">
+												<label for="sort-type-03" class="select-box__label">
+													<span class="select-box__title">По возрастанию цены</span>
+												</label>
+											</div>
+											<div class="select-box__option">
+												<input type="radio" class="select-box__radio" id="sort-type-04" name="sort-type">
+												<label for="sort-type-04" class="select-box__label">
+													<span class="select-box__title">По убыванию цены</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select-box__selected">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-sort"></use>
+									</svg>
+									<span class="select-box__placeholder is--active">По популярности</span>
+									<span class="select-box__values"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__wrapper">
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<button class="catalog__more btn-default">Показать ещё</button>
+				</div>
+			</section>
+			<!-- end of catalog -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<a href="index.html" class="footer__logotype">
+					<img src="img/logotype-white.svg" width="64" height="64" alt="SAMARAPRICEP">
+				</a>
+				<div class="footer__main">
+					<div class="footer__block">
+						<address class="footer__value">г. Самара, ул. Алма <br>Атинская, 282</address>
+					</div>
+					<div class="footer__block">
+						<span class="footer__title">
+							Связаться можно <br>по
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg><span>WhatsApp</span>
+							</a>
+							&
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg><span>Telegram</span>
+							</a>
+							<br>
+							или
+							<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a></span>
+						<div class="footer__phones">
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 203-03-03</a>
+							<a href="tel:+79372002300" class="footer__phone">+7 (937) 200-23-00</a>
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 202-03-03</a>
+						</div>
+					</div>
+					<div class="footer__block">
+						<span class="footer__value">
+							Будни: 9:00–18:00<br>
+							Выходные: 9:00–15:00
+						</span>
+					</div>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Прицепы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Фаркопы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Аксессуары</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Услуги</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Доставка и оплата</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Возврат и обмен</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">О компании</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Партнёры</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Блог</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Политика</a>
+					</li>
+				</ul>
+				<div class="footer-socnav footer__socnav">
+					<ul class="footer-socnav__list">
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-inst"></use>
+								</svg>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-rutube"></use>
+								</svg>
+								<span>Rutube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-yt"></use>
+								</svg>
+								<span>YouTube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg>
+								<span>Telegram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<span class="footer__heading">Samara <br>Pricep©</span>
+				<div class="footer__bottom">
+					<a href="mosco-web.ru" class="footer__author" target="_blank">
+						<img src="img/moscoweb.svg" width="126" height="20" alt="by MOSCOWEB">
+					</a>
+					<p class="footer__copyright">Сайт не является публичной офертой</p>
+					<p class="footer__copyright">©25 Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu scroll-fixed" id="menu">
+		<div class="menu__wrap">
+			<button class="menu__close" id="menu-close">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Компания</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Партнёры</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Доставка и оплата</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Возврат и обмен</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Политика</a>
+					</li>
+				</ul>
+			</nav>
+			<picture class="menu__bg">
+				<img src="img/main-bg.jpg" alt="Image">
+			</picture>
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- dropdown catalog -->
+	<div class="dropdown-catalog scroll-fixed" id="dropdown-catalog">
+		<div class="dropdown-catalog__wrap">
+			<div class="container">
+				<button class="dropdown-catalog__close" id="dropdown-catalog-close">
+					<span>Закрыть</span>
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="dropdown-catalog__wrapper">
+					<div class="dropdown-catalog__left">
+						<div class="dropdown-catalog-banr dropdown-catalog__banr">
+							<picture class="dropdown-catalog-banr__img">
+								<img src="img/pro-banner-01.png" alt="Image">
+							</picture>
+							<span class="dropdown-catalog-banr__title">При покупке единовременно <br>(прицепа + фаркопа + установка) — <br>⊛ опорное колесо в подарок</span>
+							<a href="#" class="dropdown-catalog-banr__btn btn btn--sm">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next-circle"></use>
+								</svg>
+								<span>Подробнее об акции</span>
+							</a>
+						</div>
+					</div>
+					<div class="dropdown-catalog__right">
+						<div class="dropdown-catalog-nav dropdown-catalog__nav">
+							<ul class="dropdown-catalog-nav__list">
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-01"></use>
+											</svg>
+											<span>Весь ассортимент</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-02"></use>
+											</svg>
+											<span>Прицепы</span>
+										</a>
+										<ul class="dropdown-catalog-nav__categories">
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для дачи</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-01.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для самоходной техники</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-02.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для водной техники</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-03.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Двухосные</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-03"></use>
+											</svg>
+											<span>Фаркопы</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-04"></use>
+											</svg>
+											<span>Аксессуары</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-05"></use>
+											</svg>
+											<span>Услуги</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-catalog__bottom">
+							<div class="dropdown-catalog-manufacturers dropdown-catalog__manufacturers">
+								<ul class="dropdown-catalog-manufacturers__list">
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem dropdown-catalog-manufacturers__elem--accent">Производители:</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО Вектор</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ОАО «Саранский завод автосамосвалов»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">Спутник</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">АО «Курганские прицепы»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">СаранскСпецТехника (ССT)</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО «Воронежские прицепы»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">Прицепы Русич</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">OАО «КМЗ»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">OOO «Трейлер»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО «Ижевские прицепы»</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of dropdown catalog -->
+	<!-- scripts -->
+	<script src="libs/inputmask/inputmask.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/gsap/gsap.min.js"></script>
+	<script src="libs/gsap/ScrollToPlugin.min.js"></script>
+	<script src="libs/gsap/ScrollTrigger.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
