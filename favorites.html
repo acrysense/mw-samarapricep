@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SAMARAPRICEP - 404</title>
-	<meta property="og:title" content="SAMARAPRICEP - 404">
+	<title>SAMARAPRICEP - Избранное</title>
+	<meta property="og:title" content="SAMARAPRICEP - Избранное">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="SAMARAPRICEP - 404">
+	<meta property="og:site_name" content="SAMARAPRICEP - Избранное">
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -27,48 +27,265 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
-		<!-- content -->
-		<div class="wrapper__content">
-			<!-- not found -->
-			<div class="not-found" id="not-found">
-				<div class="container">
-					<div class="not-found__wrap">
-						<div class="not-found__top">
-							<div class="not-found__block">
-								<a href="index.html" class="not-found__logotype">
-									<img src="img/logotype.svg" width="58" height="26" alt="SAMARAPRICEP">
-								</a>
-								<a href="index.html" class="not-found__back">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="58" height="26" alt="SAMARAPRICEP">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="catalog.html" class="nav__link nav__link--accent" id="dropdown-catalog-toggle">
 									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-next-circle"></use>
+										<use xlink:href="img/sprite.svg#icon-catalog"></use>
 									</svg>
-									<span>На главную</span>
+									<span>Каталог</span>
 								</a>
-							</div>
-							<div class="not-found__block">
-								<div class="not-found__info">
-									<p class="not-found__description">
-										Возникли <br>
-										проблемы <br>
-										со страницей?<br>
-										Напишите нам <br>
-										↓
-									</p>
-									<picture class="not-found__author">
-										<img src="img/moscoweb-black.svg" width="113" height="18" alt="MOSCOWEB" target="_blank">
-									</picture>
-								</div>
-							</div>
-						</div>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">Компания</a>
+							</li>
+							<li class="nav__item">
+								<a href="partners.html" class="nav__link">Партнёры</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Блог</a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="header__link" id="hamburger-toggle">Меню</a>
+					<div class="header__inner">
+						<a href="favorites.html" class="header__btn header__btn--desktop" aria-label="Избранное">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-like"></use>
+							</svg>
+						</a>
+						<button class="header__btn" aria-label="Корзина">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-basket"></use>
+							</svg>
+						</button>
 					</div>
-					<picture class="not-found__bg">
-						<img src="img/404-bg.jpg" alt="Image">
-					</picture>
 				</div>
 			</div>
-			<!-- end of not found -->
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- catalog -->
+			<section class="catalog" id="catalog">
+				<div class="container">
+					<div class="catalog__top">
+						<h1 class="catalog__heading catalog__heading--wide">Избранное (2)</h1>
+					</div>
+					<div class="catalog__wrapper">
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__remove" aria-label="Удалить из избранного">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-card catalog__item">
+							<button class="catalog-card__remove" aria-label="Удалить из избранного">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<button class="catalog-card__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket-filled"></use>
+								</svg>
+								<span>в корзину <b>89 400 ₽</b></span>
+							</button>
+							<a href="#" class="catalog-card__link">
+								<div class="catalog-card__top">
+									<picture class="catalog-card__img">
+										<img src="img/catalog-01.png" alt="Image">
+									</picture>
+									<div class="catalog-card__images">
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-01.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-02.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-03.jpg" alt="Image">
+										</picture>
+										<picture class="catalog-card__image">
+											<img src="img/catalog-pre-04.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="catalog-card__body">
+									<span class="catalog-card__price">от 89 400 ₽</span>
+									<span class="catalog-card__title">Прицеп «Крепыш» (8213 03)</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of catalog -->
 		</div>
 		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<a href="index.html" class="footer__logotype">
+					<img src="img/logotype-white.svg" width="64" height="64" alt="SAMARAPRICEP">
+				</a>
+				<div class="footer__main">
+					<div class="footer__block">
+						<address class="footer__value">г. Самара, ул. Алма <br>Атинская, 282</address>
+					</div>
+					<div class="footer__block">
+						<span class="footer__title">
+							Связаться можно <br>по
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg><span>WhatsApp</span>
+							</a>
+							&
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg><span>Telegram</span>
+							</a>
+							<br>
+							или
+							<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a>
+						</span>
+						<div class="footer__phones">
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 203-03-03</a>
+							<a href="tel:+79372002300" class="footer__phone">+7 (937) 200-23-00</a>
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 202-03-03</a>
+						</div>
+					</div>
+					<div class="footer__block">
+						<span class="footer__value">
+							Будни: 9:00–18:00<br>
+							Выходные: 9:00–15:00
+						</span>
+					</div>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Прицепы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Фаркопы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Аксессуары</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Услуги</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Доставка и оплата</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Возврат и обмен</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">О компании</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Партнёры</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Блог</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Политика</a>
+					</li>
+				</ul>
+				<div class="footer-socnav footer__socnav">
+					<ul class="footer-socnav__list">
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-inst"></use>
+								</svg>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-rutube"></use>
+								</svg>
+								<span>Rutube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-yt"></use>
+								</svg>
+								<span>YouTube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg>
+								<span>Telegram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<span class="footer__heading">Samara <br>Pricep©</span>
+				<div class="footer__bottom">
+					<a href="mosco-web.ru" class="footer__author" target="_blank">
+						<img src="img/moscoweb.svg" width="126" height="20" alt="by MOSCOWEB">
+					</a>
+					<p class="footer__copyright">Сайт не является публичной офертой</p>
+					<p class="footer__copyright">©25 Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
 	<!-- menu -->

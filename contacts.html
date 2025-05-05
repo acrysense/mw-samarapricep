@@ -24,7 +24,7 @@
 </head>
 <html>
 
-<body>
+<body class="bg-grey">
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
@@ -60,7 +60,12 @@
 					</nav>
 					<a href="#" class="header__link" id="hamburger-toggle">Меню</a>
 					<div class="header__inner">
-						<button class="header__btn">
+						<a href="favorites.html" class="header__btn header__btn--desktop" aria-label="Избранное">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-like"></use>
+							</svg>
+						</a>
+						<button class="header__btn" aria-label="Корзина">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-basket"></use>
 							</svg>
@@ -75,10 +80,26 @@
 			<!-- contacts -->
 			<section class="contacts" id="contacts">
 				<div class="container">
-					<div class="contacts__wrapper">
+					<div class="contacts__wrap">
 						<div class="contacts__left">
 							<div class="contacts__top">
-								<h1 class="contacts__title">Связаться можно по <a href="#">WhatsApp</a> & <a href="#">Telegram</a> или <a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a></h1>
+								<h1 class="contacts__title">
+									Связаться можно <br>по
+									<a href="#">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+										</svg><span>WhatsApp</span>
+									</a>
+									&
+									<a href="#">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-tg"></use>
+										</svg><span>Telegram</span>
+									</a>
+									<br>
+									или
+									<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a>
+								</h1>
 								<div class="contacts__phones">
 									<a href="tel:+79372030303" class="contacts__phone">+7 (937) 203-03-03</a>
 									<a href="tel:+79372002300" class="contacts__phone">+7 (937) 200-23-00</a>
@@ -93,12 +114,115 @@
 										Выходные: 9:00–15:00
 									</span>
 								</div>
+								<div class="contacts-socnav contacts__socnav contacts__socnav--desktop">
+									<ul class="contacts-socnav__list">
+										<li class="contacts-socnav__item">
+											<a href="#" class="contacts-socnav__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-inst"></use>
+												</svg>
+												<span>Instagram</span>
+											</a>
+										</li>
+										<li class="contacts-socnav__item">
+											<a href="#" class="contacts-socnav__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-rutube"></use>
+												</svg>
+												<span>Rutube</span>
+											</a>
+										</li>
+										<li class="contacts-socnav__item">
+											<a href="#" class="contacts-socnav__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-yt"></use>
+												</svg>
+												<span>YouTube</span>
+											</a>
+										</li>
+										<li class="contacts-socnav__item">
+											<a href="#" class="contacts-socnav__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-tg"></use>
+												</svg>
+												<span>Telegram</span>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="contacts__right">
-							<span class="contacts__title">А также, заполнив форму</span>
-							<form action="#" class="contacts-form contacts__form"></form>
+							<div class="contacts__block">
+								<span class="contacts__title">А также, заполнив форму</span>
+								<form action="#" class="contacts-form contacts__form">
+									<div class="contacts-form__inner">
+										<div class="input-field-line contacts-form__input">
+											<div class="input-field-line__inner">
+												<input type="text" id="contacts-name" class="input-field-line__input" placeholder="Имя">
+											</div>
+											<span class="input-field-line__error">Неверные данные!</span>
+										</div>
+										<div class="input-field-line contacts-form__input">
+											<div class="input-field-line__inner">
+												<input type="tel" id="contacts-tel" class="input-field-line__input" placeholder="+ 7 (___)  ___ - __ - __">
+											</div>
+											<span class="input-field-line__error">Неверные данные!</span>
+										</div>
+									</div>
+									<div class="contacts-form__inner">
+										<div class="input-field-line contacts-form__textarea">
+											<div class="input-field-line__inner">
+												<textarea id="contacts-message" class="input-field-line__textarea" placeholder="Сообщение"></textarea>
+											</div>
+											<span class="input-field-line__error">Неверные данные!</span>
+										</div>
+										<button class="contacts-form__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next-circle"></use>
+											</svg>
+											<span>отправить</span>
+										</button>
+									</div>
+								</form>
+							</div>
 							<div class="contacts__map" id="contacts-map"></div>
+							<div class="contacts-socnav contacts__socnav contacts__socnav--mobile">
+								<ul class="contacts-socnav__list">
+									<li class="contacts-socnav__item">
+										<a href="#" class="contacts-socnav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-inst"></use>
+											</svg>
+											<span>Instagram</span>
+										</a>
+									</li>
+									<li class="contacts-socnav__item">
+										<a href="#" class="contacts-socnav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-rutube"></use>
+											</svg>
+											<span>Rutube</span>
+										</a>
+									</li>
+									<li class="contacts-socnav__item">
+										<a href="#" class="contacts-socnav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-yt"></use>
+											</svg>
+											<span>YouTube</span>
+										</a>
+									</li>
+									<li class="contacts-socnav__item">
+										<a href="#" class="contacts-socnav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-tg"></use>
+											</svg>
+											<span>Telegram</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -141,6 +265,12 @@
 					</li>
 				</ul>
 			</nav>
+			<a href="favorites.html" class="menu__btn">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-like"></use>
+				</svg>
+				<span>Избранное</span>
+			</a>
 			<picture class="menu__bg">
 				<img src="img/main-bg.jpg" alt="Image">
 			</picture>

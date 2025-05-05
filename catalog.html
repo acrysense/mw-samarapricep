@@ -60,7 +60,12 @@
 					</nav>
 					<a href="#" class="header__link" id="hamburger-toggle">Меню</a>
 					<div class="header__inner">
-						<button class="header__btn">
+						<a href="favorites.html" class="header__btn header__btn--desktop" aria-label="Избранное">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-like"></use>
+							</svg>
+						</a>
+						<button class="header__btn" aria-label="Корзина">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-basket"></use>
 							</svg>
@@ -660,7 +665,8 @@
 							</a>
 							<br>
 							или
-							<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a></span>
+							<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a>
+						</span>
 						<div class="footer__phones">
 							<a href="tel:+79372030303" class="footer__phone">+7 (937) 203-03-03</a>
 							<a href="tel:+79372002300" class="footer__phone">+7 (937) 200-23-00</a>
@@ -788,6 +794,12 @@
 					</li>
 				</ul>
 			</nav>
+			<a href="favorites.html" class="menu__btn">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-like"></use>
+				</svg>
+				<span>Избранное</span>
+			</a>
 			<picture class="menu__bg">
 				<img src="img/main-bg.jpg" alt="Image">
 			</picture>
