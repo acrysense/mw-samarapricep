@@ -1438,6 +1438,51 @@ svg {
   position: relative;
   z-index: 600;
 }
+.header--white .header__logotype-img--default {
+  opacity: 0;
+}
+.header--white .header__logotype-img--white {
+  opacity: 1;
+}
+.header--white .header__link {
+  color: #FFFFFF;
+}
+.header--white .header__link:hover {
+  color: #FFFFFF;
+}
+@media screen and (hover: hover) {
+  .header--white .header__link:hover {
+    color: #EB1C24;
+  }
+}
+.header--white .header__btn > svg {
+  color: #FFFFFF;
+}
+@media screen and (hover: hover) {
+  .header--white .header__btn:hover > svg {
+    color: #EB1C24;
+  }
+}
+.header--white .nav__link {
+  color: #FFFFFF;
+}
+.header--white .nav__link:hover {
+  color: #FFFFFF;
+}
+.header--white .nav__link--accent {
+  color: #FFFFFF;
+}
+.header--white .nav__link--accent > svg {
+  color: #FFFFFF;
+}
+@media screen and (hover: hover) {
+  .header--white .nav__link:hover {
+    color: #EB1C24;
+  }
+  .header--white .nav__link:hover > svg {
+    color: #EB1C24;
+  }
+}
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1461,18 +1506,13 @@ svg {
   }
 }
 .header__logotype {
+  position: relative;
+  z-index: 1;
   display: block;
   overflow: hidden;
   min-width: 4.0277777778vw;
   width: 4.0277777778vw;
   height: 1.8055555556vw;
-}
-.header__logotype img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 @media screen and (min-width: 744px) and (max-width: 1023px) {
   .header__logotype {
@@ -1487,6 +1527,20 @@ svg {
     width: 13.8666666667vw;
     height: 6.1333333333vw;
   }
+}
+.header__logotype-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__logotype-img--white {
+  opacity: 0;
 }
 .header__link {
   display: block;
