@@ -8656,7 +8656,7 @@ svg {
 }
 @media screen and (min-width: 744px) and (max-width: 1023px) {
   .regions__wrap {
-    min-height: 197.5806451613vw;
+    min-height: 161.2903225806vw;
   }
 }
 @media screen and (max-width: 743px) {
@@ -8692,27 +8692,11 @@ svg {
 .regions__bg {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   z-index: -1;
   display: block;
   width: 100%;
   height: 100%;
-}
-.regions__bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(223, 228, 238, 0) 75.5%, #DFE4EE 100%);
-  pointer-events: none;
 }
 .regions__bg img {
   display: block;
@@ -8720,6 +8704,27 @@ svg {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .regions__bg {
+    top: 10.752688172vw;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 165.188172043vw;
+    height: 165.188172043vw;
+  }
+}
+@media screen and (max-width: 743px) {
+  .regions__bg {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 354.4vw;
+    height: 354.4vw;
+  }
 }
 
 .service {
