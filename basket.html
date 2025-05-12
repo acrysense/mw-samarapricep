@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAMARAPRICEP - Корзина</title>
+	<meta property="og:title" content="SAMARAPRICEP - Корзина">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SAMARAPRICEP - Корзина">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<html>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header @@header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="58" height="26" alt="SAMARAPRICEP">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="catalog.html" class="nav__link nav__link--accent" id="dropdown-catalog-toggle">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-catalog"></use>
+									</svg>
+									<span>Каталог</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">Компания</a>
+							</li>
+							<li class="nav__item">
+								<a href="partners.html" class="nav__link">Партнёры</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Блог</a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="header__link" id="hamburger-toggle">Меню</a>
+					<div class="header__inner">
+						<a href="favorites.html" class="header__btn header__btn--desktop" aria-label="Избранное">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-like"></use>
+							</svg>
+						</a>
+						<button class="header__btn" aria-label="Корзина">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-basket"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- basket -->
+			<section class="basket" id="basket">
+				<div class="container"></div>
+			</section>
+			<!-- end of basket -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<a href="index.html" class="footer__logotype">
+					<img src="img/logotype-white.svg" width="64" height="64" alt="SAMARAPRICEP">
+				</a>
+				<div class="footer__main">
+					<div class="footer__block">
+						<address class="footer__value">г. Самара, ул. Алма <br>Атинская, 282</address>
+					</div>
+					<div class="footer__block">
+						<span class="footer__title">
+							Связаться можно <br>по
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg><span>WhatsApp</span>
+							</a>
+							&
+							<a href="#">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg><span>Telegram</span>
+							</a>
+							<br>
+							или
+							<a href="mailto:info@samara-pricep.ru">info@samara-pricep.ru</a>
+						</span>
+						<div class="footer__phones">
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 203-03-03</a>
+							<a href="tel:+79372002300" class="footer__phone">+7 (937) 200-23-00</a>
+							<a href="tel:+79372030303" class="footer__phone">+7 (937) 202-03-03</a>
+						</div>
+					</div>
+					<div class="footer__block">
+						<span class="footer__value">
+							Будни: 9:00–18:00<br>
+							Выходные: 9:00–15:00
+						</span>
+					</div>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Прицепы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Фаркопы</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Аксессуары</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Услуги</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Доставка и оплата</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Возврат и обмен</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">О компании</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Партнёры</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Блог</a>
+					</li>
+					<li class="footer__list-item">
+						<a href="#" class="footer__link">Политика</a>
+					</li>
+				</ul>
+				<div class="footer-socnav footer__socnav">
+					<ul class="footer-socnav__list">
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-inst"></use>
+								</svg>
+								<span>Instagram</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-rutube"></use>
+								</svg>
+								<span>Rutube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-yt"></use>
+								</svg>
+								<span>YouTube</span>
+							</a>
+						</li>
+						<li class="footer-socnav__item">
+							<a href="#" class="footer-socnav__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg>
+								<span>Telegram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<span class="footer__heading">Samara <br>Pricep©</span>
+				<div class="footer__bottom">
+					<a href="mosco-web.ru" class="footer__author" target="_blank">
+						<img src="img/moscoweb.svg" width="126" height="20" alt="by MOSCOWEB">
+					</a>
+					<p class="footer__copyright">Сайт не является публичной офертой</p>
+					<p class="footer__copyright">©25 Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu scroll-fixed" id="menu">
+		<div class="menu__wrap">
+			<button class="menu__close" id="menu-close">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Компания</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Партнёры</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Доставка и оплата</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Возврат и обмен</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Политика</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="favorites.html" class="menu__btn">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-like"></use>
+				</svg>
+				<span>Избранное</span>
+			</a>
+			<picture class="menu__bg">
+				<img src="img/main-bg.jpg" alt="Image">
+			</picture>
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- dropdown catalog -->
+	<div class="dropdown-catalog scroll-fixed" id="dropdown-catalog">
+		<div class="dropdown-catalog__wrap">
+			<div class="container">
+				<button class="dropdown-catalog__close" id="dropdown-catalog-close">
+					<span>Закрыть</span>
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="dropdown-catalog__wrapper">
+					<div class="dropdown-catalog__left">
+						<div class="dropdown-catalog-banr dropdown-catalog__banr">
+							<picture class="dropdown-catalog-banr__img">
+								<img src="img/pro-banner-01.png" alt="Image">
+							</picture>
+							<span class="dropdown-catalog-banr__title">При покупке единовременно <br>(прицепа + фаркопа + установка) — <br>⊛ опорное колесо в подарок</span>
+							<a href="#" class="dropdown-catalog-banr__btn btn btn--sm">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next-circle"></use>
+								</svg>
+								<span>Подробнее об акции</span>
+							</a>
+						</div>
+					</div>
+					<div class="dropdown-catalog__right">
+						<div class="dropdown-catalog-nav dropdown-catalog__nav">
+							<ul class="dropdown-catalog-nav__list">
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-01"></use>
+											</svg>
+											<span>Весь ассортимент</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-02"></use>
+											</svg>
+											<span>Прицепы</span>
+										</a>
+										<ul class="dropdown-catalog-nav__categories">
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для дачи</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-01.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для самоходной техники</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-02.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Прицепы для водной техники</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-03.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Двухосные</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-03"></use>
+											</svg>
+											<span>Фаркопы</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-04"></use>
+											</svg>
+											<span>Аксессуары</span>
+										</a>
+									</div>
+								</li>
+								<li class="dropdown-catalog-nav__item">
+									<div class="dropdown-catalog-nav__elem">
+										<a href="#" class="dropdown-catalog-nav__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-catalog-05"></use>
+											</svg>
+											<span>Услуги</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-catalog__bottom">
+							<div class="dropdown-catalog-manufacturers dropdown-catalog__manufacturers">
+								<ul class="dropdown-catalog-manufacturers__list">
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem dropdown-catalog-manufacturers__elem--accent">Производители:</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО Вектор</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ОАО «Саранский завод автосамосвалов»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">Спутник</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">АО «Курганские прицепы»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">СаранскСпецТехника (ССT)</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО «Воронежские прицепы»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">Прицепы Русич</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">OАО «КМЗ»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">OOO «Трейлер»</span>
+									</li>
+									<li class="dropdown-catalog-manufacturers__item">
+										<span class="dropdown-catalog-manufacturers__elem">ООО «Ижевские прицепы»</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of dropdown catalog -->
+	<!-- scripts -->
+	<script src="libs/inputmask/inputmask.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/gsap/gsap.min.js"></script>
+	<script src="libs/gsap/ScrollToPlugin.min.js"></script>
+	<script src="libs/gsap/ScrollTrigger.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
