@@ -27,6 +27,15 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
+		<!-- top notify -->
+		<div class="top-notify" id="top-notify">
+			<div class="container">
+				<div class="top-notify__wrapper">
+					<span class="top-notify__title">Цены на сайте носят <b>рекомендательный</b> характер и могут меняться.</span>
+				</div>
+			</div>
+		</div>
+		<!-- end of top notify -->
 		<!-- header -->
 		<header class="header " id="header">
 			<div class="container">
@@ -142,68 +151,64 @@
 							</div>
 						</div>
 						<div class="catalog-filter__dropdown">
-							<div class="catalog-filter__wrap">
-								<div class="catalog-filter__main">
-									<div class="catalog-filter-detailed catalog-filter__detailed">
-										<div class="catalog-filter-detailed__wrapper">
-											<div class="catalog-filter-detailed__item">
-												<span class="catalog-filter-detailed__label">
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-rub"></use>
-													</svg>
-													<span>Цена</span>
-												</span>
-												<div class="catalog-filter-detailed__body">
-													<div class="catalog-filter-detailed__inputs">
-														<input type="text" class="catalog-filter-detailed__input" placeholder="От">
-														<input type="text" class="catalog-filter-detailed__input" placeholder="До">
-													</div>
-													<div class="catalog-filter-detailed__values">
-														<button class="catalog-filter-detailed__value" data-value-from="50" data-value-to="60">50-60 т.</button>
-														<button class="catalog-filter-detailed__value" data-value-from="60" data-value-to="70">60-70 т.</button>
-														<button class="catalog-filter-detailed__value" data-value-from="70" data-value-to="80">70-80 т.</button>
-														<button class="catalog-filter-detailed__value" data-value-from="80" data-value-to="100">80-100 т.</button>
-														<button class="catalog-filter-detailed__value" data-value-from="100">от 100 т.</button>
-													</div>
-												</div>
+							<div class="catalog-filter-detailed catalog-filter__detailed">
+								<div class="catalog-filter-detailed__wrapper">
+									<div class="catalog-filter-detailed__item">
+										<span class="catalog-filter-detailed__label">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-rub"></use>
+											</svg>
+											<span>Цена</span>
+										</span>
+										<div class="catalog-filter-detailed__body">
+											<div class="catalog-filter-detailed__inputs">
+												<input type="text" class="catalog-filter-detailed__input" placeholder="От">
+												<input type="text" class="catalog-filter-detailed__input" placeholder="До">
 											</div>
-											<div class="catalog-filter-detailed__item">
-												<span class="catalog-filter-detailed__label">
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-length-in"></use>
-													</svg>
-													<span>По длине <br>внутренней</span>
-												</span>
-												<div class="catalog-filter-detailed__body">
-													<div class="catalog-filter-detailed__inputs">
-														<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
-														<input type="number" class="catalog-filter-detailed__input" placeholder="6.2м">
-													</div>
-													<div class="catalog-filter-detailed__values">
-														<button class="catalog-filter-detailed__value" data-value-from="2.1" data-value-to="2.6">2,1 - 2,6м</button>
-														<button class="catalog-filter-detailed__value" data-value-from="2.6" data-value-to="3.5">2,6 - 3,5м</button>
-														<button class="catalog-filter-detailed__value" data-value-from="3.5">от 3,5м</button>
-													</div>
-												</div>
+											<div class="catalog-filter-detailed__values">
+												<button class="catalog-filter-detailed__value" data-value-from="50" data-value-to="60">50-60 т.</button>
+												<button class="catalog-filter-detailed__value" data-value-from="60" data-value-to="70">60-70 т.</button>
+												<button class="catalog-filter-detailed__value" data-value-from="70" data-value-to="80">70-80 т.</button>
+												<button class="catalog-filter-detailed__value" data-value-from="80" data-value-to="100">80-100 т.</button>
+												<button class="catalog-filter-detailed__value" data-value-from="100">от 100 т.</button>
 											</div>
-											<div class="catalog-filter-detailed__item">
-												<span class="catalog-filter-detailed__label">
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-width-in"></use>
-													</svg>
-													<span>По ширине <br>внутренней</span>
-												</span>
-												<div class="catalog-filter-detailed__body">
-													<div class="catalog-filter-detailed__inputs">
-														<input type="number" class="catalog-filter-detailed__input" placeholder="1.1м">
-														<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
-													</div>
-													<div class="catalog-filter-detailed__values">
-														<button class="catalog-filter-detailed__value" data-value-from="1.1" data-value-to="1.4">1,1 - 1,4м</button>
-														<button class="catalog-filter-detailed__value" data-value-from="1.4" data-value-to="1.7">1,4 - 1,7м</button>
-														<button class="catalog-filter-detailed__value" data-value-from="1.7">от 1,7м</button>
-													</div>
-												</div>
+										</div>
+									</div>
+									<div class="catalog-filter-detailed__item">
+										<span class="catalog-filter-detailed__label">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-length-in"></use>
+											</svg>
+											<span>По длине <br>внутренней</span>
+										</span>
+										<div class="catalog-filter-detailed__body">
+											<div class="catalog-filter-detailed__inputs">
+												<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
+												<input type="number" class="catalog-filter-detailed__input" placeholder="6.2м">
+											</div>
+											<div class="catalog-filter-detailed__values">
+												<button class="catalog-filter-detailed__value" data-value-from="2.1" data-value-to="2.6">2,1 - 2,6м</button>
+												<button class="catalog-filter-detailed__value" data-value-from="2.6" data-value-to="3.5">2,6 - 3,5м</button>
+												<button class="catalog-filter-detailed__value" data-value-from="3.5">от 3,5м</button>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-filter-detailed__item">
+										<span class="catalog-filter-detailed__label">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-width-in"></use>
+											</svg>
+											<span>По ширине <br>внутренней</span>
+										</span>
+										<div class="catalog-filter-detailed__body">
+											<div class="catalog-filter-detailed__inputs">
+												<input type="number" class="catalog-filter-detailed__input" placeholder="1.1м">
+												<input type="number" class="catalog-filter-detailed__input" placeholder="2.1м">
+											</div>
+											<div class="catalog-filter-detailed__values">
+												<button class="catalog-filter-detailed__value" data-value-from="1.1" data-value-to="1.4">1,1 - 1,4м</button>
+												<button class="catalog-filter-detailed__value" data-value-from="1.4" data-value-to="1.7">1,4 - 1,7м</button>
+												<button class="catalog-filter-detailed__value" data-value-from="1.7">от 1,7м</button>
 											</div>
 										</div>
 									</div>
@@ -220,6 +225,137 @@
 											<use xlink:href="img/sprite.svg#icon-close"></use>
 										</svg>
 									</button>
+								</div>
+								<div class="catalog-filter-dropdown__selects">
+									<div class="filter-select catalog-filter-dropdown__select">
+										<button class="filter-select__trigger">Тип подвески</button>
+										<div class="filter-select__dropdown">
+											<div class="filter-select__checkboxes">
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-number-axles-full-01" name="sort-number-axles-full">
+													<label for="sort-number-axles-full-01" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">3-х листовая рессора</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-number-axles-full-02" name="sort-number-axles-full">
+													<label for="sort-number-axles-full-02" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">4-х листовая рессора</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-number-axles-full-03" name="sort-number-axles-full">
+													<label for="sort-number-axles-full-03" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">5-и листовая рессора</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-number-axles-full-04" name="sort-number-axles-full">
+													<label for="sort-number-axles-full-04" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">6-и листовая рессора</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-number-axles-full-05" name="sort-number-axles-full">
+													<label for="sort-number-axles-full-05" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">ТР рессора</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-select catalog-filter-dropdown__select">
+										<button class="filter-select__trigger">Покрытие</button>
+										<div class="filter-select__dropdown">
+											<div class="filter-select__checkboxes">
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-coating-full-01" name="sort-coating-full">
+													<label for="sort-coating-full-01" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">Оцинкованный</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-coating-full-01" name="sort-coating-full">
+													<label for="sort-coating-full-01" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">Крашенный</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-select catalog-filter-dropdown__select">
+										<button class="filter-select__trigger">Производитель</button>
+										<div class="filter-select__dropdown">
+											<div class="filter-select__checkboxes">
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-brand-full-01" name="sort-brand-full">
+													<label for="sort-brand-full-01" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">«Спутник»</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-brand-full-02" name="sort-brand-full">
+													<label for="sort-brand-full-02" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">«Курганские прицепы»</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-brand-full-03" name="sort-brand-full">
+													<label for="sort-brand-full-03" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">«ССТ»</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-brand-full-04" name="sort-brand-full">
+													<label for="sort-brand-full-04" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">«Трейлер»</span>
+													</label>
+												</div>
+												<div class="square-checkbox filter-select__checkbox">
+													<input type="checkbox" class="square-checkbox__input" id="sort-brand-full-05" name="sort-brand-full">
+													<label for="sort-brand-full-05" class="square-checkbox__group">
+														<span class="square-checkbox__icon">
+															<span class="square-checkbox__icon-inner"></span>
+														</span>
+														<span class="square-checkbox__title">«Русич»</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<button class="catalog-filter-dropdown__apply">
@@ -243,7 +379,7 @@
 									<div class="select-box__section">
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-number-axles-01" name="sort-number-axles">
+												<input type="checkbox" class="select-box__radio" id="sort-number-axles-01" name="sort-number-axles">
 												<label for="sort-number-axles-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -252,7 +388,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-number-axles-02" name="sort-number-axles">
+												<input type="checkbox" class="select-box__radio" id="sort-number-axles-02" name="sort-number-axles">
 												<label for="sort-number-axles-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -276,7 +412,7 @@
 									<div class="select-box__scroll" data-simplebar>
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-coating-01" name="sort-coating">
+												<input type="checkbox" class="select-box__radio" id="sort-coating-01" name="sort-coating">
 												<label for="sort-coating-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -285,7 +421,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-coating-02" name="sort-coating">
+												<input type="checkbox" class="select-box__radio" id="sort-coating-02" name="sort-coating">
 												<label for="sort-у-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -309,7 +445,7 @@
 									<div class="select-box__scroll" data-simplebar>
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-suspension-type-01" name="sort-suspension-type">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-01" name="sort-suspension-type">
 												<label for="sort-suspension-type-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -318,7 +454,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-suspension-type-02" name="sort-suspension-type">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-02" name="sort-suspension-type">
 												<label for="sort-suspension-type-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -327,7 +463,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-suspension-type-03" name="sort-suspension-type">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-03" name="sort-suspension-type">
 												<label for="sort-suspension-type-03" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -336,7 +472,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-suspension-type-04" name="sort-suspension-type">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-04" name="sort-suspension-type">
 												<label for="sort-suspension-type-04" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -345,7 +481,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="radio" class="select-box__radio" id="sort-suspension-type-05" name="sort-suspension-type">
+												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-05" name="sort-suspension-type">
 												<label for="sort-suspension-type-05" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
