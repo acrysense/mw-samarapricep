@@ -133,7 +133,7 @@
 									<input type="text" class="filter-search__input" placeholder="Поиск по моделям…">
 								</div>
 								<button class="filter-search__btn filter-search__btn--desktop btn-default">Найти</button>
-								<button class="filter-search__btn filter-search__btn--mobile btn-default btn-default--mobile-icon btn-default--blue" id="catalog-filter-toggle">
+								<button class="filter-search__btn filter-search__btn--mobile btn-default btn-default--mobile-icon btn-default--blue catalog-filter-trigger">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-filter"></use>
 									</svg>
@@ -141,16 +141,9 @@
 								</button>
 							</div>
 						</div>
-						<div class="catalog-filter__dropdown" id="catalog-filter">
+						<div class="catalog-filter__dropdown">
 							<div class="catalog-filter__wrap">
 								<div class="catalog-filter__main">
-									<div class="catalog-filter__top">
-										<button class="catalog-filter__close">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-close"></use>
-											</svg>
-										</button>
-									</div>
 									<div class="catalog-filter-detailed catalog-filter__detailed">
 										<div class="catalog-filter-detailed__wrapper">
 											<div class="catalog-filter-detailed__item">
@@ -215,23 +208,42 @@
 										</div>
 									</div>
 								</div>
-								<button class="catalog-filter__apply">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
-									</svg>
-									<span>Применить</span>
-								</button>
 							</div>
+						</div>
+					</div>
+					<div class="catalog-filter-dropdown" id="catalog-filter">
+						<div class="catalog-filter-dropdown__wrap">
+							<div class="catalog-filter-dropdown__main">
+								<div class="catalog-filter-dropdown__top">
+									<button class="catalog-filter-dropdown__close">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<button class="catalog-filter-dropdown__apply">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+								</svg>
+								<span>Применить</span>
+							</button>
 						</div>
 					</div>
 					<div class="catalog__topping">
 						<div class="catalog__group">
+							<button class="catalog__filter-trigger catalog-filter-trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-filter"></use>
+								</svg>
+								<span>Все фильтры</span>
+							</button>
 							<div class="select-box catalog__select">
 								<div class="select-box__container">
 									<div class="select-box__section">
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-number-axles-01" name="sort-number-axles">
+												<input type="radio" class="select-box__radio" id="sort-number-axles-01" name="sort-number-axles">
 												<label for="sort-number-axles-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -240,7 +252,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-number-axles-02" name="sort-number-axles">
+												<input type="radio" class="select-box__radio" id="sort-number-axles-02" name="sort-number-axles">
 												<label for="sort-number-axles-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -264,7 +276,7 @@
 									<div class="select-box__scroll" data-simplebar>
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-coating-01" name="sort-coating">
+												<input type="radio" class="select-box__radio" id="sort-coating-01" name="sort-coating">
 												<label for="sort-coating-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -273,7 +285,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-coating-02" name="sort-coating">
+												<input type="radio" class="select-box__radio" id="sort-coating-02" name="sort-coating">
 												<label for="sort-у-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -297,7 +309,7 @@
 									<div class="select-box__scroll" data-simplebar>
 										<div class="select-box__wrap">
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-01" name="sort-suspension-type">
+												<input type="radio" class="select-box__radio" id="sort-suspension-type-01" name="sort-suspension-type">
 												<label for="sort-suspension-type-01" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -306,7 +318,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-02" name="sort-suspension-type">
+												<input type="radio" class="select-box__radio" id="sort-suspension-type-02" name="sort-suspension-type">
 												<label for="sort-suspension-type-02" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -315,7 +327,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-03" name="sort-suspension-type">
+												<input type="radio" class="select-box__radio" id="sort-suspension-type-03" name="sort-suspension-type">
 												<label for="sort-suspension-type-03" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -324,7 +336,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-04" name="sort-suspension-type">
+												<input type="radio" class="select-box__radio" id="sort-suspension-type-04" name="sort-suspension-type">
 												<label for="sort-suspension-type-04" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
@@ -333,7 +345,7 @@
 												</label>
 											</div>
 											<div class="select-box__option">
-												<input type="checkbox" class="select-box__radio" id="sort-suspension-type-05" name="sort-suspension-type">
+												<input type="radio" class="select-box__radio" id="sort-suspension-type-05" name="sort-suspension-type">
 												<label for="sort-suspension-type-05" class="select-box__label">
 													<span class="select-box__icon">
 														<span class="select-box__icon-inner"></span>
