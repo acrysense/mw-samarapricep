@@ -41,36 +41,249 @@
 								<use xlink:href="img/sprite.svg#icon-close"></use>
 							</svg>
 						</a>
+						<button class="basket__close basket__close--back" aria-label="Назад">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-arrow-prev-wide"></use>
+							</svg>
+						</button>
 					</div>
 					<div class="basket__wrap">
 						<div class="basket__left">
+							<h1 class="basket__heading">Корзина</h1>
+							<h1 class="basket__heading basket__heading--mobile">Оформление</h1>
+							<div class="basket__topping">
+								<div class="circle-checkbox basket__select-all">
+									<input type="checkbox" class="circle-checkbox__input" id="basket-item-all" name="basket-item">
+									<label for="basket-item-all" class="circle-checkbox__group">
+										<span class="circle-checkbox__icon">
+											<span class="circle-checkbox__icon-inner"></span>
+										</span>
+										<span class="circle-checkbox__title">Выбрать всё</span>
+									</label>
+								</div>
+								<button class="basket__clear">Удалить выбранные</button>
+							</div>
 							<div class="basket__wrapper">
 								<div class="basket-card basket__item">
+									<input type="checkbox" class="basket-card__checkbox" id="basket-item-01" name="basket-item">
+									<label for="basket-item-01" class="basket-card__label">
+										<span class="basket-card__label-icon"></span>
+									</label>
 									<div class="basket-card__wrapper">
 										<picture class="basket-card__img">
 											<img src="img/catalog-01.png" alt="Image">
 										</picture>
 										<div class="basket-card__body">
-											<span class="basket-card__title">sadsa</span>
+											<span class="basket-card__title">Прицеп «Крепыш» (8213 03), рама окрашена, с оцинкованными бортами</span>
 											<div class="basket-card__modifications">
 												<div class="basket-modification basket-card__modification">
 													<svg class="basket-modification__icon">
 														<use xlink:href="img/sprite.svg#icon-check"></use>
 													</svg>
 													<div class="basket-modification__body">
-														<span class="basket-modification__price">asda</span>
-														<span class="basket-modification__description">asda</span>
+														<span class="basket-modification__price">69 500 ₽</span>
+														<span class="basket-modification__description">Прицеп "Крепыш" Рама окрашена, с оцинкованными бортами</span>
 													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="basket-modification basket-card__modification">
+													<svg class="basket-modification__icon">
+														<use xlink:href="img/sprite.svg#icon-check"></use>
+													</svg>
+													<div class="basket-modification__body">
+														<span class="basket-modification__price">8 000 ₽</span>
+														<span class="basket-modification__description">Комплект бортов с оцинкованными полотнами — 250мм </span>
+													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="basket-modification basket-card__modification">
+													<svg class="basket-modification__icon">
+														<use xlink:href="img/sprite.svg#icon-check"></use>
+													</svg>
+													<div class="basket-modification__body">
+														<span class="basket-modification__price">10 500 ₽</span>
+														<span class="basket-modification__description">Тент в комплекте с дугами h 0,75 м </span>
+													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
 												</div>
 											</div>
 										</div>
 										<div class="basket-card__info">
-											<span class="basket-card__price">asda</span>
+											<span class="basket-card__price">88 000 ₽</span>
 											<div class="c-quantity basket-card__quantity">
-												<button class="c-quantity__delete"></button>
-												<button class="c-quantity__decr"></button>
-												<span class="c-quantity__value">1</span>
-												<button class="c-quantity__add"></button>
+												<button class="c-quantity__btn c-quantity__btn--minus" aria-label="Уменьшить">
+													<svg class="c-quantity__icon c-quantity__icon--one">
+														<use xlink:href="img/sprite.svg#icon-trash"></use>
+													</svg>
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<span class="c-quantity__value" data-value="1">1</span>
+												<button class="c-quantity__btn c-quantity__btn--plus" aria-label="Увеличить">
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-card basket__item">
+									<input type="checkbox" class="basket-card__checkbox" id="basket-item-02" name="basket-item">
+									<label for="basket-item-02" class="basket-card__label">
+										<span class="basket-card__label-icon"></span>
+									</label>
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/catalog-01.png" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<span class="basket-card__title">Ступица на прицеп </span>
+											<div class="basket-card__modifications">
+												<div class="basket-modification basket-card__modification">
+													<svg class="basket-modification__icon">
+														<use xlink:href="img/sprite.svg#icon-check"></use>
+													</svg>
+													<div class="basket-modification__body">
+														<span class="basket-modification__price">2 200 ₽</span>
+														<span class="basket-modification__description">133 в сборе (курганский КМЗ и МЗСА)</span>
+													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="basket-card__info">
+											<span class="basket-card__price">2 200 ₽</span>
+											<div class="c-quantity basket-card__quantity">
+												<button class="c-quantity__btn c-quantity__btn--minus" aria-label="Уменьшить">
+													<svg class="c-quantity__icon c-quantity__icon--one">
+														<use xlink:href="img/sprite.svg#icon-trash"></use>
+													</svg>
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<span class="c-quantity__value" data-value="1">1</span>
+												<button class="c-quantity__btn c-quantity__btn--plus" aria-label="Увеличить">
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-card basket__item">
+									<input type="checkbox" class="basket-card__checkbox" id="basket-item-03" name="basket-item">
+									<label for="basket-item-03" class="basket-card__label">
+										<span class="basket-card__label-icon"></span>
+									</label>
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/catalog-01.png" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<span class="basket-card__title">82944С Исполнение: ДЕЛЬФИН ОПТИМА 5,5 рес/13 </span>
+											<div class="basket-card__modifications">
+												<div class="basket-modification basket-card__modification">
+													<svg class="basket-modification__icon">
+														<use xlink:href="img/sprite.svg#icon-check"></use>
+													</svg>
+													<div class="basket-modification__body">
+														<span class="basket-modification__price">72 000 ₽</span>
+														<span class="basket-modification__description">82944С Исполнение: ДЕЛЬФИН ОПТИМА 5,5 рес/13 </span>
+													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="basket-card__info">
+											<span class="basket-card__price">72 000 ₽</span>
+											<div class="c-quantity basket-card__quantity">
+												<button class="c-quantity__btn c-quantity__btn--minus" aria-label="Уменьшить">
+													<svg class="c-quantity__icon c-quantity__icon--one">
+														<use xlink:href="img/sprite.svg#icon-trash"></use>
+													</svg>
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<span class="c-quantity__value" data-value="1">1</span>
+												<button class="c-quantity__btn c-quantity__btn--plus" aria-label="Увеличить">
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-card basket__item">
+									<input type="checkbox" class="basket-card__checkbox" id="basket-item-04" name="basket-item">
+									<label for="basket-item-04" class="basket-card__label">
+										<span class="basket-card__label-icon"></span>
+									</label>
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/catalog-01.png" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<span class="basket-card__title">Ступица на прицеп </span>
+											<div class="basket-card__modifications">
+												<div class="basket-modification basket-card__modification">
+													<svg class="basket-modification__icon">
+														<use xlink:href="img/sprite.svg#icon-check"></use>
+													</svg>
+													<div class="basket-modification__body">
+														<span class="basket-modification__price">2 200 ₽</span>
+														<span class="basket-modification__description">133 в сборе (курганский КМЗ и МЗСА)</span>
+													</div>
+													<button class="basket-modification__delete" aria-label="Удалить">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-close"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="basket-card__info">
+											<span class="basket-card__price">2 200 ₽</span>
+											<div class="c-quantity basket-card__quantity">
+												<button class="c-quantity__btn c-quantity__btn--minus" aria-label="Уменьшить">
+													<svg class="c-quantity__icon c-quantity__icon--one">
+														<use xlink:href="img/sprite.svg#icon-trash"></use>
+													</svg>
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<span class="c-quantity__value" data-value="1">1</span>
+												<button class="c-quantity__btn c-quantity__btn--plus" aria-label="Увеличить">
+													<svg class="c-quantity__icon">
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -78,6 +291,26 @@
 							</div>
 						</div>
 						<div class="basket__right">
+							<div class="basket-total basket__total">
+								<div class="basket-total__wrap">
+									<div class="basket-total__inner">
+										<div class="basket-total__body">
+											<span class="basket-total__label">
+												<span>Итого (Примерно)</span>
+											</span>
+											<span class="basket-total__price">159 500 ₽</span>
+										</div>
+										<a href="#" class="basket-total__btn basket-total__btn--order btn-default btn-default--accent">Оформить</a>
+										<a href="#" class="basket-total__btn basket-total__btn--mobile btn-default btn-default--accent">Заполнить данные</a>
+									</div>
+									<button class="basket-total__promocode">
+										<span>Промокод</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-next-bold"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
 							<div class="basket-order basket__order">
 								<form action="#" class="basket-order__wrap">
 									<div class="basket-order__wrapper">
@@ -116,14 +349,18 @@
 											<div class="circle-checkbox basket-order__checkbox">
 												<input type="radio" class="circle-checkbox__input" id="delivery-01" name="delivery">
 												<label for="delivery-01" class="circle-checkbox__group">
-													<span class="circle-checkbox__icon"></span>
+													<span class="circle-checkbox__icon">
+														<span class="circle-checkbox__icon-inner"></span>
+													</span>
 													<span class="circle-checkbox__title">Самовывоз</span>
 												</label>
 											</div>
 											<div class="circle-checkbox basket-order__checkbox">
 												<input type="radio" class="circle-checkbox__input" id="delivery-02" name="delivery">
 												<label for="delivery-02" class="circle-checkbox__group">
-													<span class="circle-checkbox__icon"></span>
+													<span class="circle-checkbox__icon">
+														<span class="circle-checkbox__icon-inner"></span>
+													</span>
 													<span class="circle-checkbox__title">Доставка</span>
 												</label>
 											</div>
