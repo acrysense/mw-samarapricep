@@ -27,15 +27,6 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
-		<!-- top notify -->
-		<div class="top-notify" id="top-notify">
-			<div class="container">
-				<div class="top-notify__wrapper">
-					<span class="top-notify__title">Цены на сайте носят <b>рекомендательный</b> характер и могут меняться.</span>
-				</div>
-			</div>
-		</div>
-		<!-- end of top notify -->
 		<!-- header -->
 		<header class="header " id="header">
 			<div class="container">
@@ -377,6 +368,11 @@
 								</svg>
 							</button>
 						</div>
+						<button class="swiper-button-prev" aria-label="Назад">
+							<svg class="swiper-button-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</section>
@@ -1139,6 +1135,48 @@
 											</svg>
 											<span>Аксессуары</span>
 										</a>
+										<ul class="dropdown-catalog-nav__categories">
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Для прицепа</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-01.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Для фаркопа</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-02.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Для крепления груза</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-03.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Для лодочных прицепов</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Светотехника</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="dropdown-catalog-nav__item">
@@ -1199,13 +1237,118 @@
 	</div>
 	<!-- end of dropdown catalog -->
 	<!-- modals -->
-	<div class="modal" id="modal">
+	<div class="modal" id="modal-feedback">
 		<div class="modal__wrap">
 			<button class="modal__close" aria-label="Закрыть">
 				<svg>
 					<use xlink:href="img/sprite.svg#icon-close"></use>
 				</svg>
 			</button>
+			<span class="modal__heading">Форма заявки</span>
+			<form action="#" class="modal-form modal__form">
+				<div class="modal-form__controls">
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="text" id="modal-feedback-name" class="input-field-line__input" placeholder="Имя">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="email" id="modal-feedback-email" class="input-field-line__input" placeholder="Почта">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="tel" id="modal-feedback-tel" class="input-field-line__input" placeholder="+ 7 (___)  ___ - __ - __">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<textarea id="modal-feedback-message" class="input-field-line__textarea" placeholder="Сообщение"></textarea>
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+				</div>
+				<div class="modal-form__bottom">
+					<p class="modal-form__description">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a> <br>и даю согласие на <a href="#">обработку персональных данных</a>.</p>
+				</div>
+				<button class="modal-form__btn">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+					</svg>
+					<span>Отправить</span>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="modal-success">
+		<div class="modal__wrap">
+			<div class="modal-message modal__message">
+				<div class="modal-message__body">
+					<picture class="modal-message__icon">
+						<img src="img/icon-success.svg" alt="Image">
+					</picture>
+					<span class="modal-message__title">Благодарим! <br>Успешно доставили.</span>
+					<span class="modal-message__description">Мы свяжемся с Вами в ближайшее время</span>
+				</div>
+				<button class="modal-message__btn">Хорошо</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-success">
+		<div class="modal__wrap">
+			<div class="modal-message modal__message">
+				<div class="modal-message__body">
+					<picture class="modal-message__icon">
+						<img src="img/icon-error.svg" alt="Image">
+					</picture>
+					<span class="modal-message__title">Что-то пошло не так!</span>
+					<span class="modal-message__description">Похоже произошла ошибка, из-за которой не удалось доставить сообщение </span>
+				</div>
+				<button class="modal-message__btn">Хорошо</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-promocode">
+		<div class="modal__wrap">
+			<button class="modal__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<span class="modal__heading">Введите промокод</span>
+			<form action="#" class="modal-form modal__form">
+				<div class="modal-form__controls">
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<button class="input-field-line__link">отменить</button>
+							<input type="text" id="contacts-name" class="input-field-line__input input-field-line__input--ls" placeholder="••••••••••••">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<!-- <picture class="modal-form__status-icon">
+                    <img src="img/icon-success.svg" alt="Image">
+                </picture> -->
+					<!-- or -->
+					<!-- <picture class="modal-form__status-icon">
+                    <img src="img/icon-error.svg" alt="Image">
+                </picture> -->
+				</div>
+				<div class="modal-form__bottom">
+					<!-- <span class="modal-form__description">Промокод на скидку –7% <br>активирован</span> -->
+					<!-- or -->
+					<!-- <span class="modal-form__description">Промокод недействителен</span> -->
+				</div>
+				<button class="modal-form__btn modal-form__btn--between">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+					</svg>
+					<span>Применить</span>
+				</button>
+			</form>
 		</div>
 	</div>
 	<!-- end of modals -->
