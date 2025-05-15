@@ -3087,6 +3087,7 @@ svg {
   pointer-events: none;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  will-change: transform, opacity;
 }
 .menu.is--active {
   visibility: visible;
@@ -10685,7 +10686,7 @@ svg {
 }
 
 .basket {
-  padding: 2.5vw 0 5.5555555556vw;
+  padding: 2.2916666667vw 0 5.5555555556vw;
 }
 @media screen and (max-width: 1023px) {
   .basket {
