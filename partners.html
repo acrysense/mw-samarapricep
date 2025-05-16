@@ -897,6 +897,31 @@
 			</form>
 		</div>
 	</div>
+	<div class="modal" id="modal-select-address">
+		<div class="modal__wrap modal__wrap--center">
+			<button class="modal__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="modal-select-address modal__address">
+				<div class="modal-select-address__wrap">
+					<div class="modal-select-address__top">
+						<div class="modal-select-address__inner">
+							<svg class="modal-select-address__icon">
+								<use xlink:href="img/sprite.svg#icon-location"></use>
+							</svg>
+							<input type="text" class="modal-select-address__input" placeholder="Поиск адреса">
+						</div>
+					</div>
+					<div class="modal-select-address__bottom">
+						<button class="modal-select-address__btn btn-default btn-default--accent">Применить</button>
+					</div>
+					<div class="modal-select-address__map" id="select-address-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="libs/inputmask/inputmask.min.js"></script>
