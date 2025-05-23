@@ -20,6 +20,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- styles -->
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="libs/simplebar/simplebar.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <html>
@@ -79,6 +80,7 @@
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-basket"></use>
 							</svg>
+							<span>1</span>
 						</a>
 					</div>
 				</div>
@@ -1247,6 +1249,97 @@
 		</div>
 	</div>
 	<!-- end of dropdown catalog -->
+	<!-- dropdown basket -->
+	<div class="dropdown-basket"> <!-- add class 'is--active for visible' -->
+		<div class="dropdown-basket__scroll" data-simplebar>
+			<div class="dropdown-basket__wrapper">
+				<div class="dropdown-basket__item">
+					<picture class="dropdown-basket__img">
+						<img src="img/catalog-01.png" alt="Image">
+					</picture>
+					<div class="dropdown-basket__body">
+						<span class="dropdown-basket__title">Прицеп «Крепыш» (8213 03), рама окрашена, с оцинкованными бортами</span>
+						<span class="dropdown-basket__price">88 000 ₽</span>
+					</div>
+					<button class="dropdown-basket__delete" aria-label="Удалить">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-trash"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="dropdown-basket__item">
+					<picture class="dropdown-basket__img">
+						<img src="img/catalog-01.png" alt="Image">
+					</picture>
+					<div class="dropdown-basket__body">
+						<span class="dropdown-basket__title">Ступица на прицеп</span>
+						<span class="dropdown-basket__price">2 200 ₽</span>
+					</div>
+					<button class="dropdown-basket__delete" aria-label="Удалить">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-trash"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="dropdown-basket__item">
+					<picture class="dropdown-basket__img">
+						<img src="img/catalog-01.png" alt="Image">
+					</picture>
+					<div class="dropdown-basket__body">
+						<span class="dropdown-basket__title">82944С Исполнение: ДЕЛЬФИН ОПТИМА 5,5 рес/13</span>
+						<span class="dropdown-basket__price">72 000 ₽</span>
+					</div>
+					<button class="dropdown-basket__delete" aria-label="Удалить">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-trash"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="dropdown-basket__item">
+					<picture class="dropdown-basket__img">
+						<img src="img/catalog-01.png" alt="Image">
+					</picture>
+					<div class="dropdown-basket__body">
+						<span class="dropdown-basket__title">82944С Исполнение: ДЕЛЬФИН ОПТИМА 5,5 рес/13</span>
+						<span class="dropdown-basket__price">72 000 ₽</span>
+					</div>
+					<button class="dropdown-basket__delete" aria-label="Удалить">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-trash"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="dropdown-basket__item">
+					<picture class="dropdown-basket__img">
+						<img src="img/catalog-01.png" alt="Image">
+					</picture>
+					<div class="dropdown-basket__body">
+						<span class="dropdown-basket__title">82944С Исполнение: ДЕЛЬФИН ОПТИМА 5,5 рес/13</span>
+						<span class="dropdown-basket__price">72 000 ₽</span>
+					</div>
+					<button class="dropdown-basket__delete" aria-label="Удалить">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-trash"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<a href="basket.html" class="dropdown-basket__btn btn-default btn-default--sm btn-default--accent">Открыть корзину</a>
+	</div>
+	<!-- end of dropdown basket -->
+	<!-- added product -->
+	<div class="added-product"> <!-- add class 'is--active for visible' -->
+		<div class="added-product__body">
+			<span class="added-product__title">Добавлен в корзину</span>
+			<span class="added-product__description">Прицеп «Крепыш» (8213 03), рама окрашена, с оцинкованными бортами</span>
+			<span class="added-product__price">88 000 ₽</span>
+		</div>
+		<picture class="added-product__img">
+			<img src="img/catalog-01.png" alt="Image">
+		</picture>
+	</div>
+	<!-- end of added product -->
 	<!-- modals -->
 	<div class="modal" id="modal-feedback">
 		<div class="modal__wrap">
@@ -1391,6 +1484,7 @@
 	<!-- scripts -->
 	<script src="libs/inputmask/inputmask.min.js"></script>
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/simplebar/simplebar.min.js"></script>
 	<script src="libs/gsap/gsap.min.js"></script>
 	<script src="libs/gsap/ScrollToPlugin.min.js"></script>
 	<script src="libs/gsap/ScrollTrigger.min.js"></script>
