@@ -1329,15 +1329,17 @@
 	</div>
 	<!-- end of dropdown basket -->
 	<!-- added product -->
-	<div class="added-product"> <!-- add class 'is--active for visible' -->
-		<div class="added-product__body">
-			<span class="added-product__title">Добавлен в корзину</span>
-			<span class="added-product__description">Прицеп «Крепыш» (8213 03), рама окрашена, с оцинкованными бортами</span>
-			<span class="added-product__price">88 000 ₽</span>
+	<div class="added-product">
+		<div class="added-product__item"> <!-- add class 'is--active for visible' -->
+			<div class="added-product__body">
+				<span class="added-product__title">Добавлен в корзину</span>
+				<span class="added-product__description">Прицеп «Крепыш» (8213 03), рама окрашена, с оцинкованными бортами</span>
+				<span class="added-product__price">88 000 ₽</span>
+			</div>
+			<picture class="added-product__img">
+				<img src="img/catalog-01.png" alt="Image">
+			</picture>
 		</div>
-		<picture class="added-product__img">
-			<img src="img/catalog-01.png" alt="Image">
-		</picture>
 	</div>
 	<!-- end of added product -->
 	<!-- modals -->
@@ -1478,6 +1480,22 @@
 					<div class="modal-select-address__map" id="select-address-map"></div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-confirm">
+		<div class="modal__wrap">
+			<button class="modal__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<span class="modal__heading">Подтвердить удаление товаров из&nbsp;корзины</span>
+			<button class="modal__btn">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+				</svg>
+				<span>Очистить корзину</span>
+			</button>
 		</div>
 	</div>
 	<!-- end of modals -->

@@ -557,6 +557,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="catalog__result"> <!-- add class 'is--active for visible' -->
+						<p class="catalog__result-value">Товары не найдены.</p>
+					</div>
 					<div class="catalog__wrapper">
 						<div class="catalog-card catalog__item">
 							<button class="catalog-card__btn">
@@ -1335,6 +1338,22 @@
 					<div class="modal-select-address__map" id="select-address-map"></div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-confirm">
+		<div class="modal__wrap">
+			<button class="modal__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<span class="modal__heading">Подтвердить удаление товаров из&nbsp;корзины</span>
+			<button class="modal__btn">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+				</svg>
+				<span>Очистить корзину</span>
+			</button>
 		</div>
 	</div>
 	<!-- end of modals -->
