@@ -4470,6 +4470,19 @@ svg {
   top: 4.6527777778vw;
   right: 0.5555555556vw;
   z-index: 700;
+  pointer-events: none;
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .added-product {
+    top: 13.4408602151vw;
+    right: 1.0752688172vw;
+  }
+}
+@media screen and (max-width: 743px) {
+  .added-product {
+    top: 26.6666666667vw;
+    right: 2.1333333333vw;
+  }
 }
 .added-product__item {
   -webkit-transform: translate(110%, 0);
@@ -4491,6 +4504,7 @@ svg {
   transition: all 0.25s ease-in-out;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.25s ease-in-out;
 }
 .added-product__item.is--active {
   -webkit-transform: translate(0, 0);
@@ -4501,8 +4515,6 @@ svg {
 }
 @media screen and (min-width: 744px) and (max-width: 1023px) {
   .added-product__item {
-    top: 13.4408602151vw;
-    right: 1.0752688172vw;
     padding: 0.4032258065vw;
     max-width: 40.5913978495vw;
     border-radius: 1.747311828vw;
@@ -4510,8 +4522,6 @@ svg {
 }
 @media screen and (max-width: 743px) {
   .added-product__item {
-    top: 26.6666666667vw;
-    right: 2.1333333333vw;
     padding: 0.8vw;
     max-width: 80.5333333333vw;
     border-radius: 3.4666666667vw;
