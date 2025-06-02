@@ -201,7 +201,7 @@
 								</li>
 								<li class="dropdown-catalog-nav__item">
 									<div class="dropdown-catalog-nav__elem">
-										<a href="catalog.html" class="dropdown-catalog-nav__link">
+										<a href="catalog.html" class="dropdown-catalog-nav__link modal-btn" data-id="modal-towbars">
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-catalog-03"></use>
 											</svg>
@@ -228,7 +228,15 @@
 											</li>
 											<li class="dropdown-catalog-nav__categories-item">
 												<a href="#" class="dropdown-catalog-nav__categories-link">
-													<span>Для фаркопа</span>
+													<span>Светотехника</span>
+													<picture class="dropdown-catalog-nav__categories-img">
+														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
+													</picture>
+												</a>
+											</li>
+											<li class="dropdown-catalog-nav__categories-item">
+												<a href="#" class="dropdown-catalog-nav__categories-link">
+													<span>Крепление груза</span>
 													<picture class="dropdown-catalog-nav__categories-img">
 														<img src="img/dropdown-catalog-categories-02.png" alt="Image">
 													</picture>
@@ -236,25 +244,9 @@
 											</li>
 											<li class="dropdown-catalog-nav__categories-item">
 												<a href="#" class="dropdown-catalog-nav__categories-link">
-													<span>Для крепления груза</span>
+													<span>Для фаркопа</span>
 													<picture class="dropdown-catalog-nav__categories-img">
 														<img src="img/dropdown-catalog-categories-03.png" alt="Image">
-													</picture>
-												</a>
-											</li>
-											<li class="dropdown-catalog-nav__categories-item">
-												<a href="#" class="dropdown-catalog-nav__categories-link">
-													<span>Для лодочных прицепов</span>
-													<picture class="dropdown-catalog-nav__categories-img">
-														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
-													</picture>
-												</a>
-											</li>
-											<li class="dropdown-catalog-nav__categories-item">
-												<a href="#" class="dropdown-catalog-nav__categories-link">
-													<span>Светотехника</span>
-													<picture class="dropdown-catalog-nav__categories-img">
-														<img src="img/dropdown-catalog-categories-04.png" alt="Image">
 													</picture>
 												</a>
 											</li>
@@ -549,6 +541,65 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-towbars">
+		<div class="modal__wrap">
+			<button class="modal__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<span class="modal__heading">У нас есть фаркопы для 99 % автомобилей.</span>
+			<form action="#" class="modal-form modal__form">
+				<div class="modal-form__controls">
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="text" id="modal-feedback-name" class="input-field-line__input" placeholder="Имя">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="tel" id="modal-feedback-tel" class="input-field-line__input" placeholder="+ 7 (___)  ___ - __ - __">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="text" id="modal-feedback-name" class="input-field-line__input" placeholder="Марка автомобиля">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="text" id="modal-feedback-name" class="input-field-line__input" placeholder="Модель машины">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<input type="text" id="modal-feedback-name" class="input-field-line__input" placeholder="Год выпуска">
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+					<div class="input-field-line modal-form__input">
+						<div class="input-field-line__inner">
+							<textarea id="modal-feedback-message" class="input-field-line__textarea" placeholder="Комментарий"></textarea>
+						</div>
+						<span class="input-field-line__error">Неверные данные!</span>
+					</div>
+				</div>
+				<div class="modal-form__bottom">
+					<p class="modal-form__description">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a> <br>и даю согласие на <a href="#">обработку персональных данных</a>.</p>
+				</div>
+				<button class="modal-form__btn">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-arrow-next-wide"></use>
+					</svg>
+					<span>Отправить</span>
+				</button>
+			</form>
 		</div>
 	</div>
 	<!-- end of modals -->
